@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <VBox prefHeight="290.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="76.0" prefWidth="800.0">
+                    <children>
+                        <DatePicker id="startDatePicker" disable="true" layoutX="129.0" layoutY="37.0" promptText="Wybierz datę" />
+                        <DatePicker id="endDatePicker" disable="true" layoutX="452.0" layoutY="37.0" promptText="Wybierz datę" />
+                  <ToggleButton id="startToggleButton" layoutX="14.0" layoutY="37.0" mnemonicParsing="false" text="Data początkowa" />
+                  <ToggleButton id="endToggleButton" layoutX="352.0" layoutY="37.0" mnemonicParsing="false" text="Data końcowa" />
+                  <Separator layoutX="-2.0" layoutY="70.0" prefHeight="0.0" prefWidth="800.0" />
+                  <Label layoutX="14.0" layoutY="14.0" text="Wybór zakresu filtrowania" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="76.0" prefWidth="800.0">
+                    <children>
+                        <RadioButton id="defaultRadioButton" layoutX="14.0" layoutY="32.0" mnemonicParsing="false" selected="true" text="&lt;Brak&gt;" />
+                        <RadioButton id="weekendRadioButton" layoutX="138.0" layoutY="34.0" mnemonicParsing="false" text="Gupa dni:" />
+                        <RadioButton id="weekdayRadioButton" layoutX="348.0" layoutY="34.0" mnemonicParsing="false" text="Dzień tygodnia:" />
+                        <ChoiceBox id="dayOfWeekChoiceBox" disable="true" layoutX="471.0" layoutY="30.0" prefWidth="150.0" />
+                  <ToggleButton id="daysGroupToggleButton" disable="true" layoutX="218.0" layoutY="30.0" mnemonicParsing="false" text="Bez weekendu" />
+                  <Label layoutX="14.0" layoutY="6.0" text="Wybór typu filtrowania w ramach tygodnia" />
+                  <Separator layoutY="60.0" prefHeight="13.0" prefWidth="800.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="68.0" prefWidth="800.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="30.0" text="Typ pokoi:" />
+                        <Label layoutX="383.0" layoutY="30.0" text="Cena pokoi:" />
+                        <ChoiceBox id="roomTypeChoiceBox" layoutX="98.0" layoutY="26.0" prefWidth="150.0" />
+                        <ChoiceBox id="roomPriceChoiceBox" layoutX="472.0" layoutY="26.0" prefWidth="150.0" />
+                  <Label layoutX="14.0" text="Wybór preferencji " />
+                  <Separator layoutX="-2.0" layoutY="61.0" prefHeight="8.0" prefWidth="800.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="66.0" prefWidth="800.0">
+                    <children>
+                        <Button id="analizeButton" layoutX="629.0" layoutY="34.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Analizuj" />
+                  <ToggleButton id="markersToggleButton" layoutX="93.0" layoutY="34.0" mnemonicParsing="false" text="Ukryj znaczniki" />
+                  <ToggleButton id="linesToggleButton" layoutX="201.0" layoutY="34.0" mnemonicParsing="false" text="Ukryj linie" />
+                  <ToggleButton id="subgraphsToggleButton" layoutX="14.0" layoutY="34.0" mnemonicParsing="false" text="Składowe" />
+                  <Label layoutX="14.0" layoutY="6.0" text="Prezentacja grafu" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </top>
+   <bottom>
+      <TextArea id="logTextArea" editable="false" prefHeight="120.0" prefWidth="750.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <StackPane id="centerStackPane" prefHeight="180.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox id="containerHBox" pickOnBounds="false" prefHeight="100.0" prefWidth="200.0" visible="false">
+               <children>
+                  <VBox id="checkboxesContainerVBox" fillWidth="false" prefHeight="180.0" prefWidth="120.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

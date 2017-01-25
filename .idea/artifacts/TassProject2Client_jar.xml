@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TassProject2Client:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TassProject2Client_jar</output-path>
+    <root id="archive" name="TassProject2Client.jar">
+      <element id="module-output" name="TassProject2Client" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/okio-1.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/converter-gson-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/animal-sniffer-annotations-1.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/GMapsFX-2.0.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/retrofit-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/okhttp-3.5.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
